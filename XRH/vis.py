@@ -76,7 +76,7 @@ class Image3D():
         self.out.clear_output()
         with self.out:
             print("Importing image {}, please wait...".format(self.select_file.selected_filename))
-            img_import = io.imread(self.select_file.selected_filename, plugin="pil")
+            img_import = io.imread(self.select_file.selected, plugin="pil")
             
             # Is the image a 3D stack?
             if len(img_import.shape) != 3:
