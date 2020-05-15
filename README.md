@@ -1,6 +1,8 @@
 # CorView
 
-CorView (CORrelative microscopy VIEWer) is an interactive visualisation tool for 2D-3D image datasets, where 2D images are registered to 3D stacks. Correlative microscopy datasets can be viewed side-by-side and these visualisations shared as html files. CorView contains tools to create these 
+CorView (CORrelative microscopy VIEWer) is an interactive visualisation tool for 2D-3D image datasets, where 2D images are registered to 3D stacks. Correlative microscopy datasets can be viewed side-by-side and these visualisations shared as html files. CorView contains tools to create these interactive visualisations easily.
+
+![alt text](CorView_demo.gif "CorView demo")
 
 This work was completed with support from the Engineering and Physical Sciences Research Council (EPSRC), Institute for Life Sciences, University of Southampton during a doctoral research studentship from the Faculty of Engineering and Physical Sciences, University of Southampton.
 
