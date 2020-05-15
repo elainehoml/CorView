@@ -481,12 +481,12 @@ class CreateVis():
         
         # show CT
         p_CT = figure(plot_width=500, plot_height=500, title="CT slice {}".format(str(CT_slice)), tools=tools)
-        p_CT.image(image=[img_CT[int(CT_slice)]], x=[0], y=[0], dw=[img_CT.shape[1]], dh=[img_CT.shape[0]],palette="Greys256")
+        p_CT.image(image=[img_CT[int(CT_slice)]], x=[0], y=[0], dw=[img_CT.shape[2]], dh=[img_CT.shape[1]],palette="Greys256")
 
         # show histo
         p_histo = figure(plot_width=500, plot_height=500, x_range=p_CT.x_range, y_range=p_CT.y_range, 
                          title="Histology {}".format(self.img_2D.get_2D_img_fname()), tools=tools)
-        p_histo.image_rgba(image=[rgba(img_histo)], x=[0], y=[0], dw=[img_CT.shape[1]], dh=[img_CT.shape[0]])
+        p_histo.image_rgba(image=[rgba(img_histo)], x=[0], y=[0], dw=[img_CT.shape[2]], dh=[img_CT.shape[1]])
 
         p = gridplot([[p_CT, p_histo]])
         show(p)
