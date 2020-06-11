@@ -1,0 +1,5 @@
+*.tif
+.ipynb_checkpoints/
+*.html
+*.pptx
+*.gif
